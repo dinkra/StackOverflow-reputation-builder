@@ -75,7 +75,7 @@ var getUnanswered = function(tags) {
 							sort: 'creation'};
 	
 	var result = $.ajax({
-		url: "http://api.stackexchange.com/2.2/questions/unanswered",
+		url: "//api.stackexchange.com/2.2/questions/unanswered",
 		data: request,
 		dataType: "jsonp",
 		type: "GET",
@@ -127,7 +127,7 @@ var getInspiration = function(tags) {
 							sort: 'creation'};
 	
 	var result = $.ajax({
-		url: "http://api.stackexchange.com/2.2/tags/" + tags + "/top-answerers/month",
+		url: "//api.stackexchange.com/2.2/tags/" + tags + "/top-answerers/month",
 		data: request,
 		dataType: "jsonp",
 		type: "GET",
